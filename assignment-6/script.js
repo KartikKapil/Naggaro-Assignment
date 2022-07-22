@@ -75,7 +75,7 @@ $(document).ready(function() {
     });
 
     function email_validation(){
-        var emailregex =  new RegExp('^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$');
+        var emailregex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
         let email = $('#email').val();
         if(email.length == 0){
             $('#emailvalidation').show();
